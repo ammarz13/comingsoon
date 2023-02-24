@@ -12,35 +12,34 @@ body{
     height: 100vh;
    
 }
-.logo-box{
+/* .logo-box{
     margin: 80px 0 0;
+} */
+.logo-box img{
+    max-width: 300px;
 }
 h1{
 font-weight: 400;
-font-size: 64px;
-line-height: 78px;
-
-letter-spacing: 0.36em;
-
+font-size: 28px;
+    letter-spacing: 0.3em;
 color: #FFFFFF;
-margin-top: 80px;
+/* margin-top: 80px; */
 text-transform: uppercase;
 }
 .form-wrap{
-    margin-top: 70px;
+    max-width: 800px;
+    margin: 0px auto;
 }
-.form-control{
+.form-control {
     background: #D9D9D9;
-border-radius: 80px;
-height: 71px;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.095em;
-
-color: #7D7D7C;
-padding: 0px 45px;
-margin-bottom: 28px;
+    border-radius: 80px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.095em;
+    color: #7D7D7C;
+    padding: 0px 30px;
+    margin-bottom: 0;
 }
 .form-control:focus{
     background-color: #D9D9D9;
@@ -50,11 +49,10 @@ margin-bottom: 28px;
 button{
     background: #8ECD35;
 border-radius: 80px;
-height: 71px;
+height: 50px;
 
 font-weight: 700;
-font-size: 32px;
-line-height: 39px;
+font-size: 18px;
 width: 100%;
 /* identical to box height */
 
@@ -65,23 +63,22 @@ border: none;
 outline: none;
 margin: 0px auto;
 }
-.more-info{
+/* .more-info{
     margin:40px 0 80px;
-}
+} */
 
 .more-info p{
     font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.36em;
+font-size: 18px;
+letter-spacing: 0.3em;
 
 color: #8ECD35;
 text-align: center;
+margin-bottom: 0;
 }
 .more-info a{
     font-weight: 400;
-font-size: 32px;
-line-height: 39px;
+font-size: 18px;
 /* identical to box height */
 
 letter-spacing: 0.125em;
@@ -99,8 +96,48 @@ display: flex;
     margin-right: 29px;
 }
 
-
-@media screen and (min-width:1500px){
+.mt-30{
+    margin-top: 30px;
+}
+@media screen and (max-width:767px){
+    body{
+        height: 100vh;
+    }
+    .main-wrap{
+         height: 100%;
+    }
+    .logo-box img {
+        max-width: 280px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .more-info a{
+        font-size: 14px;
+        margin: 0 0px 15px;
+        
+    }
+    .more-info p{
+        font-size: 14px;
+    }
+    .more-info a img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .form-control,button{
+        height: 40px;
+        font-size: 14px;
+    }
+    button{
+        margin: 15px 0px 0px;
+    }
+    .mt-30{
+        margin-top: 20px;
+    }
+    
+}
+/* @media screen and (min-width:1500px){
     
     .container{
         display: flex;
@@ -183,7 +220,7 @@ display: flex;
     .logo-box img{
         max-width: 300px;   
     }
-}
+} */
 
 ::-webkit-scrollbar {
   width: 10px;
